@@ -1,0 +1,22 @@
+name = "portfolio-app-irc"
+main = "src/worker.ts"
+compatibility_date = "2023-10-30"
+compatibility_flags = ["nodejs_compat"]
+
+# Account details will be populated from environment variables
+account_id = ""  # Will be populated from CLOUDFLARE_ACCOUNT_ID env variable
+workers_dev = true
+
+# Durable Objects configuration
+[durable_objects]
+bindings = [
+  { name = "SOCKET", class_name = "WebSocketSession" }
+]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["WebSocketSession"]
+
+# Optional: AI binding for potential future enhancements
+[ai]
+binding = "AI" 

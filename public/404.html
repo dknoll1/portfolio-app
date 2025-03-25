@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Daniel du Pré Portfolio</title>
+  <script>
+    // Redirect to the homepage with the requested path as a query parameter
+    // This is particularly useful for GitHub Pages or other static hosts that don't support custom 404 redirects
+    const path = window.location.pathname;
+    const redirectURL = window.location.origin + '/?redirect=' + encodeURIComponent(path);
+    window.location.replace(redirectURL);
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html> 
