@@ -5,7 +5,7 @@ const ResumePage: React.FC = () => {
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <div className="bg-white shadow-md rounded p-8">
         <header className="text-center mb-8">
-          <h1 className="text-3xl font-bold mb-2">Daniel du Pre</h1>
+          <h1 className="text-3xl font-bold mb-2">Daniel du Pré</h1>
           <p className="text-blue-600 mb-2">Web Developer & UI/UX Designer</p>
           <div className="text-sm text-black-500">
             <p>Phoenix, AZ</p>

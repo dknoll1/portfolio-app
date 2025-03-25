@@ -2,6 +2,7 @@
 import React from 'react';
 import FeaturedProjects from './FeaturedProjects';
 import ProjectsList from './ProjectsList';
+import '../output.css';
 
 const ProjectsPage: React.FC = () => {
   return (

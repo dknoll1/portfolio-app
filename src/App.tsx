@@ -20,7 +20,7 @@ const AppContent: React.FC = () => {
       <nav className="bg-white shadow px-6 py-4">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <a href="/" className="text-xl font-bold flex items-center">
-            <h1>My Portfolio</h1>
+            <h1>Daniel du Pré's Portfolio</h1>
           </a>
           <div className="flex items-center">
             <button 
