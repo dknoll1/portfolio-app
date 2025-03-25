@@ -1,8 +1,8 @@
 // Cursor/portfolio-app/src/lib/projectService.ts
 // Provides functions to interact with the projects collection in Firestore
 
-import { db } from "./firebase";
-import { collection, addDoc, getDocs, DocumentData } from "firebase/firestore";
+import { db } from "./lib/firebase";
+import { collection, addDoc, getDocs } from "firebase/firestore";
 
 // Define the Project interface for type safety
 export interface Project {
