@@ -57,25 +57,7 @@ The application includes an IRC chat feature that allows users to connect to IRC
 
 You have two options for authenticating with Cloudflare's API:
 
-#### Option 1: API Token (Recommended)
-
-1. Log in to the Cloudflare dashboard
-2. Go to **My Profile > API Tokens**
-3. Click **Create Token**
-4. Select **Create Custom Token**
-5. Give your token a name (e.g., "Portfolio IRC Worker")
-6. Add the following permissions:
-   - **Account > Workers Scripts > Edit**
-   - **Account > Workers Routes > Edit** 
-   - **Account > Durable Objects > Edit**
-7. Under **Account Resources**, select your specific account or "All Accounts"
-8. Create the token and update `.env.local`:
-   ```
-   CLOUDFLARE_ACCOUNT_ID=your_account_id
-   CLOUDFLARE_API_TOKEN=your_token_value
-   ```
-
-#### Option 2: Global API Key (Legacy)
+#### Cloudflare Global API Key (Legacy)
 
 1. Log in to the Cloudflare dashboard
 2. Go to **My Profile > API Tokens**
@@ -104,6 +86,10 @@ You have two options for authenticating with Cloudflare's API:
    npm run deploy-worker
    ```
 
+4. **Build & Deploy**
+   ```bash
+   npm run build && npm run deploy
+
 ### Troubleshooting Deployment
 
 If you encounter issues deploying the worker:
@@ -124,20 +110,10 @@ If you encounter issues deploying the worker:
 ### Using the Chat Feature
 
 1. Navigate to the "Chat" page in the portfolio app
-2. Enter the IRC server (default: irc.libera.chat)
-3. Provide a nickname
-4. Enter a channel to join (default: #test)
+2. Enter the IRC server (default: irc.freenode.org)
+3. Provide a nickname or use default..
+4. Enter a channel to join (default: #cafe)
 5. Click "Connect"
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
