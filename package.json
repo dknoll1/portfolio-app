@@ -35,7 +35,8 @@
     "build": "craco build",
     "postbuild": "powershell -Command \"Copy-Item public/_redirects build/ -Force\"",
     "test": "craco test",
-    "deploy-worker": "node deploy-worker.js"
+    "deploy-worker": "node deploy-worker.js",
+    "deploy": "npx wrangler pages deploy ./build --project-name portfolio-app"
   },
   "eslintConfig": {
     "extends": [

@@ -179,7 +179,7 @@ export class WebSocketSession {
       if (user.channel === channel) {
         client.send(JSON.stringify({
           type: 'message',
-          from: 'System',
+          from: 'CafeBot',
           text: message,
           timestamp: new Date().toISOString()
         }));
